@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+body{
+ background-color: hsl(185, 41%, 84%);
+}
+header{
+    text-align: center;
+    margin-top: 20px;
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 5%;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+div{
+    border-radius: 5px;
+}
+.dollar-div,.iconperson-div{
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    text-align: right;
+}
+.dollar-div{
+    background-image: url(images/icon-dollar.svg);
+    background-position: 15px;
+    background-repeat: no-repeat;
+}
+.iconperson-div{
+    background-image: url(images/icon-person.svg);
+    background-position:15px ;
+    background-repeat: no-repeat;
+}
+
+section.tips{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items:center;
+}
+section.tips h1{
+    color: hsl(0, 0%, 100%);
+}
+section.tips >button {
+    background-color: hsl(183, 100%, 15%);
+    width:30%;
+    padding: 10px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#fifteen{
+    background-color: hsl(172, 67%, 45%);
+}
+#custom{
+    background-color:hsl(189, 41%, 97%) ;
+    color: hsl(186, 14%, 43%);
+    width:30%;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 15px;
+}
+.first-section,.second-section{
+    width: 80%;
+    min-width: 200px;
+    padding: 20px;
+}
+div.first-section h3{
+    color: hsl(184, 14%, 56%);
+}
+.second-section{
+    background-color: hsl(183, 100%, 15%);
+}
+.flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.flex h3{
+    color:hsl(0, 0%, 100%); 
+
+}
+.flex p{
+    color:hsl(186, 14%, 43%) ;
+}
+.flex h1{
+    color: hsl(172, 67%, 45%);
+    font-size: 30px;
+}
+.reset-div{
+    background-color: hsl(172, 67%, 45%);
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: hsl(186, 14%, 43%);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+        width: 100%;
+        margin:0;
+        align-items: center;
+    }
+    section.tips >div {
+        width: 30%;
+    }
+    .first-section,.second-section{
+        width: 100%;
+    }
+}

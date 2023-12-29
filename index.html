@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="CalcTip.css">
+  <title>Geegstack project| Tip calculator app</title>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="">
+  </header>
+  <main>
+    <div class="first-section">
+        <section> 
+          
+          <h3>Bill</h3>
+          <input type="number" class="dollar-div" id="bill">
+          <h1></h1>
+          
+        </section>
+        <h3>Select Tip %</h3>
+        <section class="tips"> 
+          <button class="btn" id="five-perctg"><h1> 5% </h1> </button>
+          <button class="btn" id="ten-perctg"><h1>10%</h1></button>
+          <button class="btn" id="fifteen"><h1>15%</h1>  </button>
+          <button class="btn" id="twntyfive-perctg"> <h1>25%</h1></button>
+          <button class="btn" id="fifty-perctg"><h1>50%</h1> </button>
+          <input type="number" placeholder="custom" id="custom">
+        </section>
+
+        <section class="part-three">
+          <h3>Number of People</h3>
+          <input type="number" class="iconperson-div" id="person">
+        </section>
+
+    </div>
+
+    <div class="second-section">
+    
+
+      <section>
+          <div class="flex">
+              <div>
+                <h3> Tip Amount</h3>
+                <p> / person</p>
+              </div>
+
+              <div id="tip-amount"> <h1>$0.00 </h1></div>
+          </div> 
+
+          <div class="flex">
+              <div>
+                <h3> Total</h3>
+                <p> / person</p>
+              </div>
+
+              <div id="total-amount"> <h1>$0.00 </h1></div>
+          </div> 
+        
+
+      </section>
+      <div class="reset-div" id="reset"> <h3>RESET</h3></div>
+    </div>
+
+  </main>
+
+<!-- <button id="paul"> calculate</button> -->
+    <script src="CalcTip.js">
+
+    </script>
+</body>
+</html>
